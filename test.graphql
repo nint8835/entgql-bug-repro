@@ -1,0 +1,9 @@
+enum TestTest {
+    a
+    b
+}
+
+enum OtherTestTest {
+    c
+    d
+}

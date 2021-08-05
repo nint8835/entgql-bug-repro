@@ -1,0 +1,22 @@
+schema:
+  - test.graphql
+  - ent.graphql
+
+resolver:
+  layout: follow-schema
+  dir: .
+
+autobind:
+  - github.com/nint8835/entgql-bug-repro/ent
+
+# This section declares type mapping between the GraphQL and Go type systems.
+models:
+  ID:
+    model:
+      - github.com/99designs/gqlgen/graphql.IntID
+  TestTest:
+    model:
+      - github.com/nint8835/entgql-bug-repro/ent/test.Test
+  OtherTestTest:
+    model:
+      - github.com/nint8835/entgql-bug-repro/ent/othertest.Test
