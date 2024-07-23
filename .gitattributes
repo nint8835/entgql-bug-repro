@@ -1,0 +1,5 @@
+generated.go linguist-generated
+ent/*.go linguist-generated
+ent/entc.go -linguist-generated
+ent/generate.go -linguist-generated
+ent/schema/*.go -linguist-generated
